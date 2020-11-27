@@ -23,7 +23,7 @@ The goal of Rfunc2 is to provide functions for changepoint detection.
 
 ## Installation
 
-You can install the released version of Rfunc2 from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of Rfunc2 from github with:
 
 ``` r
 remotes::install_github(“bwd29/Rfunc2”)
