@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Rfunc2
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of Rfunc2 is to provide functions for changepoint detection.
+
+## Installation
+
+You can install the released version of Rfunc2 from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+remotes::install_github(“bwd29/Rfunc2”)
+```
+
+## Example
+
+This is a basic example of binseg and changepoint:
+
+```{r example}
+library(Rfunc2)
+## basic example code
+Rfunc2::BINSEG(c(1,2,3,4,5,6),2)
+
+Rfunc2::CHANGEPOINT(c(1,2,3,4,5,6))
+```
+
+
+
+
