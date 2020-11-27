@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.com/bwd29/Rfunc2.svg?branch=master)](https://travis-ci.com/bwd29/Rfunc2)
 <!-- badges: end -->
 
 The goal of Rfunc2 is to provide functions for changepoint detection.
