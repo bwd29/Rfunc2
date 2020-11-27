@@ -1,4 +1,16 @@
 
+#' Detect a changepoint
+#'
+#' Detect a Changepoint in a vector using sum of squares as a cost
+#'
+#' @param data a vector of data
+#'
+#' @return the change point location and the reduction in cost
+#' @export
+#' @examples
+#' Rfunc2::CHANGEPOINT(c(1,2,3,4,5,6))
+
+
 CHANGEPOINT <- function(data){
   N.points <- length(data)
   lowest.cost <- sum((mean(data)-data)^2)

@@ -1,3 +1,18 @@
+
+#' Detect a series of change points with binary segmentation
+#'
+#' Detect a series of change points with binary segmentation and return the points and costs
+#'
+#' @param data a vector of data
+#' @param segs the number of segments
+#'
+#' @return a data matrix of the change points and costs
+#' @export
+#' @examples
+#' Rfunc2::BINSEG(c(1,2,3,4,5,6),2)
+
+
+
 BINSEG <- function(data, segs){
 
   change.points <- vector(length = segs+1)
@@ -33,8 +48,7 @@ BINSEG <- function(data, segs){
     change.points[i+1] <- best.change.point
     cost.reductions[i+1] <- best.reduction
   }
-  library(data.table)
-  table <- data.table::data.table(changepoints = change.points[-1], cost.reductions = cost.reductions[-1])
+  table <- cbind(change.points[-1], cost.reductions[-1])
   return(table)
 
 }
